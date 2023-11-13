@@ -7,7 +7,7 @@
 class Model {
 private:
     std::vector<Vec3f> verts_;          // Container for vertices
-    std::vector<std::vector<int>> faces_; // Container for faces
+    std::vector<std::vector<int> > faces_; // Container for faces
 
 public:
     // Constructor that initializes the model by loading from a file

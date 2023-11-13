@@ -30,8 +30,8 @@
 const TGAColor white = TGAColor(255, 255, 255, 255);
 const TGAColor red   = TGAColor(255, 0,   0,   255);
 Model *model = NULL;
-const int width  = 1600;
-const int height = 1600;
+const int width  = 800;
+const int height = 800;
 
 void line(int x0, int y0, int x1, int y1, TGAImage &image, TGAColor color) {
     bool steep = false;
@@ -69,7 +69,7 @@ int main(int argc, char** argv) {
     if (argc == 2) {
         model = new Model(argv[1]);
     } else {
-        model = new Model("obj/african_head.obj");
+        model = new Model("obj/basketball.obj");
     }
 
     // Create an image object
